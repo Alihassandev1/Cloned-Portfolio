@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.dm-sans-family {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+    --bs-body-font-size: 17.8px;
+}
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgb(254 251 251 / 95%);
+    --bs-navbar-hover-color: rgb(246 242 242);
+    --bs-navbar-disabled-color: rgb(241 238 238);
+    --bs-navbar-active-color: rgb(241 234 234);
+}
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.para-static {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+.para-static::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+.bgcolor{
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(67, 67, 67, 1) 73%);
+    color: white;
+}
+.bgimg-1{
+    background-color: transparent;
+    background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(9, 6, 5, 0.5) 100%), url('Images/bg-image/bg-img.jpg');
+    height: 90vh;
+    width: 100vw;
+}
+
+.bgimg-2{
+    background-color: transparent;
+    background-image:linear-gradient(90deg, rgba(28, 0, 47, 0.82) 0%, rgba(255, 0, 0, 0.42) 100%), url('Images/bg-image/bg-img2.jpg');
+    height: 80vh;
+    width: 100vw;
+}
+.bgimg-3{
+    background-color: transparent;
+    background-image:linear-gradient(120deg, rgba(19, 36, 65, 0.6) 38%, rgba(8, 235, 110, 0.4) 100%), url('Images/bg-image/bg-img3.jpg');
+    height: 90vh;
+    width: 100vw;
+}
+.bgimg-4{
+    background-color: transparent;
+    background-image:linear-gradient(90deg, rgba(111, 7, 1, 0.85) 0%, rgba(0, 0, 0, 0.56) 99%), url('Images/bg-image/bg-img4.jpg');
+    height: 90vh;
+    width: 100vw;
+}
+.bgimg-5{
+    background-color: transparent;
+    background-image:linear-gradient(330deg, rgba(5, 148, 188, 0.9) 0%, rgba(3, 190, 188, 0.95) 100%), url('Images/bg-image/bg-img5.jpg');
+    height: 90vh;
+    width: 100vw;
+}
+.bgimg-6{
+    background-color: transparent;
+    background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(5, 66, 249, 0.5) 100%) , url('Images/bg-image/bg-img6.jpg');
+    height: 90vh;
+    width: 100vw;
+}
+.bgimg-7{
+    background-color: transparent;
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.31) 36%, rgba(0, 0, 0, 1) 100%), url('Images/bg-image/bg-img7.jpg');
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.offcanvas-dark{
+    background-color: black;
+}
+.upArrrow-custom{
+    width: 67px;
+}
